@@ -50,7 +50,7 @@ class Array:
         if self.logicalSize == len(self.items):
             self.grow()
         for i in range(self.logicalSize, index, -1):
-            self.itens[i] = self.items[i - 1]
+            self.items[i] = self.items[i - 1]
         self.items[index] = newItem
         self.logicalSize += 1
 
